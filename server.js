@@ -26,6 +26,11 @@ app.get('/survey', function(req, res) {
 	res.sendFile(path.join(__dirname, "app/public/survey.html"));
 });
 
+// when /api/tables is visited, display the tables array
+app.get('/api/tables', function(req, res) {
+	res.send(peopleAvail);
+});
+
 // starts server to begin listening
 app.listen(PORT, function() {
 	console.log("App listening on PORT " + PORT);

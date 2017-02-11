@@ -1,0 +1,24 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "finds a friend that has similar personality",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/famomin/week13-Friend-Finder.git"
+  },
+  "author": "Faras Momin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/famomin/week13-Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/famomin/week13-Friend-Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1"
+  }
+}

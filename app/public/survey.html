@@ -3,6 +3,7 @@
 <head>
 	<title>Survey</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
 	<div class="container"> <!-- container for home page heading -->
@@ -36,140 +37,140 @@
 					<h3>Question 1: </h3>
 					<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question1">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>					
+					</select>
 				</div> <!-- closing row for Question 1 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 2 -->
 					<h3>Question 2: </h3>
 					<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question2">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 2 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 3 -->
 					<h3>Question 3: </h3>
 					<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question3">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 3 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 4 -->
 					<h3>Question 4: </h3>
 					<h4>You rarely do something just out of sheer curiosity.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question4">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 4 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 5 -->
 					<h3>Question 5: </h3>
 					<h4>People can rarely upset you.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question5">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 5 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 6 -->
 					<h3>Question 6: </h3>
 					<h4>It is often difficult for you to relate to other people’s feelings.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question6">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 6 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 7 -->
 					<h3>Question 7: </h3>
 					<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question7">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 7 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 8 -->
 					<h3>Question 8: </h3>
 					<h4>You rarely get carried away by fantasies and ideas.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question8">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 8 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 9 -->
 					<h3>Question 9: </h3>
 					<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question9">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 9 -->
 
 				<div class="row" style="margin: 5px 10px 20px 10px"> <!-- row for Question 10 -->
 					<h3>Question 10: </h3>
 					<h4>You feel more energetic after spending time with a group of people.</h4>
 
-					<select class="selectpicker btn-group bootstrap-select">
+					<select class="selectpicker btn-group bootstrap-select" id="question10">
 						<option value>Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
 						<option value="5">5 (Strongly Agree)</option>
-					</select>	
+					</select>
 				</div> <!-- closing row for Question 10 -->
 
 				<button type="submit" class="btn btn-primary" id="submit" style="width: 100px">SUBMIT</button>
@@ -179,11 +180,55 @@
 		</div> <!-- closing panel for questions -->
 
 		<footer class="footer"> <!-- footer for api links -->
-        	<div class="container">
-        		<p><a href="/api/tables">API Partners List </a> | <a href="https://github.com/famomin/week13-Friend-Finder">Github Repo</a></p>
-        	</div>
-    	</footer> <!-- closing footer  -->
-
+    	<div class="container">
+      	<p><a href="/api/tables">API Partners List </a> | <a href="https://github.com/famomin/week13-Friend-Finder">Github Repo</a></p>
+      </div>
+    </footer> <!-- closing footer  -->
 	</div>	<!-- closing container for home page heading -->
+
+	<!-- script to grab and post user inputs  -->
+	<script type="text/javascript">
+		$("#submit").on("click", function(event) {
+			event.preventDefault();
+
+			var q1 = $("#question1").val();
+			var q2 = $("#question2").val();
+			var q3 = $("#question3").val();
+			var q4 = $("#question4").val();
+			var q5 = $("#question5").val();
+			var q6 = $("#question6").val();
+			var q7 = $("#question7").val();
+			var q8 = $("#question8").val();
+			var q9 = $("#question9").val();
+			var q10 = $("#question10").val();
+
+			var newFriend = {
+				userName: $("#name").val().trim(),
+				userPic: $("#picture").val().trim(),
+				userAnswers: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+      };
+
+			$.post("/api/tables", newFriend)
+				.done(function(data){
+					console.log(data)
+				});
+		});
+
+		// $(".reset").on("click", function(event) {
+		// 	$("#name").set("");
+		// 	$("#picture").set("");
+		// 	$("#question1").val("");
+		// 	$("#question2").val("");
+		// 	$("#question3").val("");
+		// 	$("#question4").val("");
+		// 	$("#question5").val("");
+		// 	$("#question6").val("");
+		// 	$("#question7").val("");
+		// 	$("#question8").val("");
+		// 	$("#question9").val("");
+		// 	$("#question10").val("");
+		// });
+
+	</script>
 </body>
 </html>

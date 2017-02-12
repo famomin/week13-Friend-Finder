@@ -19,20 +19,8 @@ var peopleAvail = [
     "name": "Louis T. Delia",
     "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
     "scores": [ "3", "3", "4", "2", "2", "1", "3", "2", "2", "3" ]
-  },
-  {
-    "name": "Lou Ritter",
-    "photo": "https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11",
-    "scores": [ "4", "3", "4", "1", "5", "2", "5", "3", "1", "4" ]
-  },
-  {
-    "name": "Jordan Biason",
-    "photo": "https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/12741971_10205764267089153_4212986785721953092_n.jpg?oh=4e18265f7d380167223a97fbd7eba278&oe=57B78445",
-    "scores": [ "4", "4", "2", "3", "2", "2", "3", "2", "4", "5" ]
-  },
-  {
-    "name": "Kerry Petti",
-    "photo": "http://appamatix.com/wp-content/uploads/2015/07/FunnyFaces6_zpsba27b59b-450x384.jpg",
-    "scores": [ "4", "3", "3","4", "1", "2", "1", "3", "5", "3" ]
   }
 ];
+
+//exporting array of people available
+module.exports = peopleAvail;

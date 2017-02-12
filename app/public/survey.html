@@ -4,6 +4,7 @@
 	<title>Survey</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="container"> <!-- container for home page heading -->
@@ -179,6 +180,25 @@
 			</div> <!-- closing div for panel body for name, pic and 10 questions -->
 		</div> <!-- closing panel for questions -->
 
+		<!-- modal to show best match. Bootstrap code -->
+		<div class="modal fade" id="openModal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Best Match</h4>
+		      </div>
+		      <div class="modal-body">
+		        <h3 id="modalName"></h3>
+						<span id="modalPic"></span>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
 		<footer class="footer"> <!-- footer for api links -->
     	<div class="container">
       	<p><a href="/api/tables">API Partners List </a> | <a href="https://github.com/famomin/week13-Friend-Finder">Github Repo</a></p>
@@ -211,7 +231,12 @@
 			$.post("/api/tables", newFriend)
 				.done(function(data){
 					console.log(data)
-				});
+
+			$("#modalName").text(data.name);
+		  $("#modalPic").html("<img src='" + data.photo + "' width='250' height='250'>")
+			$("#openModal").modal("show");
+
+			});
 		});
 
 		// $(".reset").on("click", function(event) {

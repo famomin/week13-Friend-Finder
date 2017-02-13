@@ -4,7 +4,7 @@ var userData = require("../data/friends");
 module.exports = function(app) {
   // when /api/tables is visited, display the Friends available array
   app.get('/api/tables', function(req, res) {
-  	res.send(userData);
+  	res.json(userData);
   });
 
   //push new person to the array and show it on api/tables. Applying logic for best match.
@@ -16,7 +16,6 @@ module.exports = function(app) {
     var differenceScore = 0;
     var closeMatch;
 
-    console.log((newFriend));
     //double for loop. first loop to run through each exisiting person on array.
     for (var i = 0; i < userData.length - 1; i++){
       differenceScore = 0;

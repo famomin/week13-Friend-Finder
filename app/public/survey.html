@@ -199,7 +199,7 @@
 					<span id="modalPic"></span>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" id="closeModal" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -268,6 +268,23 @@
 			}
 
 			return false;
+		});
+
+		$("#closeModal").on("click", function(event) {
+			event.preventDefault();
+
+			$("#name").val("");
+			$("#picture").val("");
+			$("#question1").val("");
+			$("#question2").val("");
+			$("#question3").val("");
+			$("#question4").val("");
+			$("#question5").val("");
+			$("#question6").val("");
+			$("#question7").val("");
+			$("#question8").val("");
+			$("#question9").val("");
+			$("#question10").val("");
 		});
 
 	</script>

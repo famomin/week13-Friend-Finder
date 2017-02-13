@@ -39,7 +39,7 @@
 					<h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question1">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -53,7 +53,7 @@
 					<h4>Generally speaking, you rely more on your experience than your imagination.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question2">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -67,7 +67,7 @@
 					<h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question3">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -81,7 +81,7 @@
 					<h4>You rarely do something just out of sheer curiosity.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question4">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -95,7 +95,7 @@
 					<h4>People can rarely upset you.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question5">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -109,7 +109,7 @@
 					<h4>It is often difficult for you to relate to other people’s feelings.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question6">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -123,7 +123,7 @@
 					<h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question7">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -137,7 +137,7 @@
 					<h4>You rarely get carried away by fantasies and ideas.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question8">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -151,7 +151,7 @@
 					<h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question9">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -165,7 +165,7 @@
 					<h4>You feel more energetic after spending time with a group of people.</h4>
 
 					<select class="selectpicker btn-group bootstrap-select" id="question10">
-						<option value>Select Option</option>
+						<option value="">Select Option</option>
 						<option value="1">1 (Strongly Disagree)</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -175,29 +175,9 @@
 				</div> <!-- closing row for Question 10 -->
 
 				<button type="submit" class="btn btn-primary" id="submit" style="width: 100px">SUBMIT</button>
-				<button type="reset" class="btn btn-primary" id="reset" style="width: 100px">RESET</button>
 
 			</div> <!-- closing div for panel body for name, pic and 10 questions -->
 		</div> <!-- closing panel for questions -->
-
-		<!-- modal to show best match. Bootstrap code -->
-		<div class="modal fade" id="openModal" tabindex="-1" role="dialog">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title">Best Match</h4>
-		      </div>
-		      <div class="modal-body">
-		        <h3 id="modalName"></h3>
-						<span id="modalPic"></span>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
 
 		<footer class="footer"> <!-- footer for api links -->
     	<div class="container">
@@ -206,53 +186,88 @@
     </footer> <!-- closing footer  -->
 	</div>	<!-- closing container for home page heading -->
 
+	<!-- modal to show best match. Bootstrap code -->
+	<div class="modal fade" id="openModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Best Match</h4>
+				</div>
+				<div class="modal-body">
+					<h3 id="modalName"></h3>
+					<span id="modalPic"></span>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
 	<!-- script to grab and post user inputs  -->
 	<script type="text/javascript">
 		$("#submit").on("click", function(event) {
 			event.preventDefault();
 
-			var q1 = $("#question1").val();
-			var q2 = $("#question2").val();
-			var q3 = $("#question3").val();
-			var q4 = $("#question4").val();
-			var q5 = $("#question5").val();
-			var q6 = $("#question6").val();
-			var q7 = $("#question7").val();
-			var q8 = $("#question8").val();
-			var q9 = $("#question9").val();
-			var q10 = $("#question10").val();
+			// Form validation
+    	function validateForm() {
+		  	var isValid = true;
+				//checking if either name or pic field is blank
+		  	$('.form-control').each(function() {
+		    	if ( $(this).val() === '' ) {
+						isValid = false;
+					}
+		  	});
 
-			var newFriend = {
-				userName: $("#name").val().trim(),
-				userPic: $("#picture").val().trim(),
-				userAnswers: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
-      };
+				// checking if any user missed any questions
+		  	$('.selectpicker').each(function() {
+		  		if( $(this).val() === "") {
+						isValid = false
+					}
+		  	});
+		  	return isValid;
+			}
 
-			$.post("/api/tables", newFriend)
-				.done(function(data){
-					console.log(data)
+			//if every thing is filled out correctly then
+			if(validateForm() == true) {
 
-			$("#modalName").text(data.name);
-		  $("#modalPic").html("<img src='" + data.photo + "' width='250' height='250'>")
-			$("#openModal").modal("show");
+				//setting all question inputs to variables
+				var q1 = $("#question1").val();
+				var q2 = $("#question2").val();
+				var q3 = $("#question3").val();
+				var q4 = $("#question4").val();
+				var q5 = $("#question5").val();
+				var q6 = $("#question6").val();
+				var q7 = $("#question7").val();
+				var q8 = $("#question8").val();
+				var q9 = $("#question9").val();
+				var q10 = $("#question10").val();
 
-			});
+				//creating an object of newFriend with name, pic and and answers
+				var newFriend = {
+					userName: $("#name").val().trim(),
+					userPic: $("#picture").val().trim(),
+					userAnswers: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+	      };
+
+				//
+				$.post("/api/tables", newFriend)
+					.done(function(data){
+						console.log(data)
+
+						$("#modalName").text(data.name);
+					  $("#modalPic").html("<img src='" + data.photo + "' width='250' height='250'>")
+						$("#openModal").modal("show");
+				});
+			}
+
+			else {
+				alert("Please fill out all fields before submitting.")
+			}
+
+			return false;
 		});
-
-		// $(".reset").on("click", function(event) {
-		// 	$("#name").set("");
-		// 	$("#picture").set("");
-		// 	$("#question1").val("");
-		// 	$("#question2").val("");
-		// 	$("#question3").val("");
-		// 	$("#question4").val("");
-		// 	$("#question5").val("");
-		// 	$("#question6").val("");
-		// 	$("#question7").val("");
-		// 	$("#question8").val("");
-		// 	$("#question9").val("");
-		// 	$("#question10").val("");
-		// });
 
 	</script>
 </body>

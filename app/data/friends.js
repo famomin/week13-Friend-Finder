@@ -17,7 +17,7 @@ var peopleAvail = [
   },
   {
     "name": "Bernie Sanders",
-    "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+    "photo": "https://thumbs.mic.com/ODViZTZlMTZlNSMvUEg0YnhpTUxJYjRzc0pXVWZoWTBzREw4dHk4PS81N3g2NTE6MzYyNHgyMzc2LzEyODB4NjIwL2ZpbHRlcnM6cXVhbGl0eSg3NSkvaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL3BvbGljeW1pYy1pbWFnZXMvaTljNHpmdXBydHdqMXhxZnJ3dWxsZHJ2ZGFrbW1teTViYnF4Y3p4NmdjanhnaWJqeG50dHl1MWE5MHNxeHoxaS5qcGc.jpg",
     "scores": [ "4", "3", "4", "2", "2", "1", "3", "2", "2", "3" ]
   }
 ];

@@ -12,7 +12,7 @@
 			<p style="font-size: 32px; font-weight: bold; border-bottom: 2px solid black">
 				Survey</p>
 			<p>Answer 10 Questions</p>
-			<p>And find a that matches your personality</p>
+			<p>And find a friend that matches your personality</p>
 		</div><!-- closing Jumbotron for heading -->
 
 		<div class="panel panel-default"> <!-- panel for asking questions -->
@@ -246,16 +246,17 @@
 
 				//creating an object of newFriend with name, pic and and answers
 				var newFriend = {
-					userName: $("#name").val().trim(),
-					userPic: $("#picture").val().trim(),
-					userAnswers: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+					name: $("#name").val().trim(),
+					photo: $("#picture").val().trim(),
+					scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
 	      };
 
-				//
+				//posting new user data to the Friends API
 				$.post("/api/tables", newFriend)
 					.done(function(data){
 						console.log(data)
 
+						//getting data and  pusing it to modal. Then showing modal with best match.
 						$("#modalName").text(data.name);
 					  $("#modalPic").html("<img src='" + data.photo + "' width='250' height='250'>")
 						$("#openModal").modal("show");

@@ -11,12 +11,12 @@ module.exports = function(app) {
   app.post('/api/tables', function(req, res) {
     var newFriend = req.body;
     userData.push(newFriend); //pushing new friedn to api tables (array)
-    console.log(newFriend.scores)
 
     var lowScore = 50; //50 imaginary number. Difference of two people is not possible to get to 50.
     var differenceScore = 0;
     var closeMatch;
 
+    console.log((newFriend));
     //double for loop. first loop to run through each exisiting person on array.
     for (var i = 0; i < userData.length - 1; i++){
       differenceScore = 0;
@@ -24,17 +24,15 @@ module.exports = function(app) {
       //second loop to run though all the inpus from users.
       for (var j = 0; j < userData[i].scores.length; j++ ) {
         differenceScore = differenceScore + (Math.abs(userData[i].scores[j] - newFriend.scores[j]));
-        console.log(user)
       } //closing j for loop
 
       //checking if differenceScore is less than previous low score or not.
       if(differenceScore < lowScore){
         lowScore = differenceScore;
-        closeMatch = i;
-        console.log(differenceScore);
+        closeMatch = userData[i];
       } //closing if statment
     } //closing i for loop
 
-    res.json(userData[closeMatch]);
+    res.json(closeMatch);
   }); //closing post route
 }; // clsoing module.exports function
